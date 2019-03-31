@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="packages/core/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="page">
+        <div class="page-content">
+          <div class="top-left-panel">
+            <div class="bg-img">
+              <img src="img/lock.jpg">
+              <div class="overlay-img"></div>
+            </div>
+            <img src="img/profile.jpg" class="img-profile">
+            <div class="block-title">Romadhan</div>
+            <div class="block">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+            </div>
+          </div>
+          <div class="list links-list">
+            <ul>
+              <li>
+                <a href="/" class="panel-close active"><i class="material-icons">dashboard</i> Dashboard</a>
+              </li>
+              <li>
+                <a href="app/main.html" class="link external panel-close"><i class="f7-icons">persons_round_fill</i> Crud Nama</a>
+              </li>
+              <li>
+                <a href="/info/" class="panel-close"><i class="f7-icons">info_round_fill</i> Info</a>
+              </li>
+              <li>
+                <a href="/settings/" class="panel-close"><i class="material-icons">settings</i> Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popover more">
+      <div class="popover-angle"></div>
+      <div class="popover-inner">
+        <div class="list">
+          <ul>
+            <li><a href="https://romadhanedy.ga/" class="link external list-button popover-close"><i class="f7-icons">world_fill</i> My Website</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+            <div class="title">Dashboard</div>
+            <div class="right">
+              <a class="link icon-only popover-open" data-popover=".more">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="page-content dashboard">
+          <div class="block">
+            <br>
+            <div class="card dashboard">
+              <div class="img-card-dashboard">
+                <img src="img/profile.jpg">
+              </div>
+              <center><p class="card-p">Romadhan, Jakarta</p></center>
+            </div>
+          </div>  
+          <div class="block">
+            <div class="card card-outline" style="position: relative">
+              <div class="card-content">
+              <div class="card-content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.05995909137!2d106.86758672826112!3d-6.2558316954718505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f301ea1c2901%3A0xfc9931c7b0225846!2sState+Vocational+High+School+10+Jakarta!5e0!3m2!1sen!2sid!4v1550651480408" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="packages/core/js/framework7.bundle.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $(".panel-close").click(function(){
+      $(".panel-close.active").removeClass("active");
+      $(this).addClass('active');
+    });
+  </script>
+</body>
+</html>

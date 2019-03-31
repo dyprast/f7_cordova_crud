@@ -1,0 +1,22 @@
+.navbar-inner{
+	background-image: radial-gradient(#4fc3f7, #29b6f6, #0277bd);
+	color: #fff;
+}
+.title{
+	width: 100%;
+	text-align: center !important;
+	font-size: 18px;
+}
+.title.pop-up{
+	width: auto;
+	text-align: left;
+}
+.navbar-inner i{
+	width: 25px !important;
+}
+.left a{
+	color: #fff;
+}
+.right a{
+	color: #fff;
+}
